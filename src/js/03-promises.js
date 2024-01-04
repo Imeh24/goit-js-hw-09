@@ -21,8 +21,8 @@ function createPromise(position, delay) {
   });
 }
 
-function handleSubmit(event) {
-  event.preventDefault();
+function handleSubmit(e) {
+  e.preventDefault();
   let delayValue = Number(delayElement.value);
 
   for(let i = 1; i <= amountElement.value; i++) {
