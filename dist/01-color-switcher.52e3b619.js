@@ -503,6 +503,25 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"cYUEh":[function(require,module,exports) {
+const startButton = document.querySelector("button[data-start]");
+const stopButton = document.querySelector("button[data-stop]");
+function getRandomHexColor() {
+    return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, 0)}`;
+}
+let interval = null;
+let currentColor = "";
+startButton.addEventListener("click", ()=>{
+    startButton.disabled = true;
+    interval = setInterval(()=>{
+        currentColor = getRandomHexColor();
+        document.body.style.backgroundColor = getRandomHexColor();
+    }, 1000);
+});
+stopButton.addEventListener("click", ()=>{
+    clearInterval(interval);
+    document.body.style.backgroundColor = currentColor;
+    startButton.disabled = false;
+});
 
 },{}]},["gzrwE","cYUEh"], "cYUEh", "parcelRequired7c6")
 

@@ -581,7 +581,7 @@ function addLeadingZero(value) {
     return String(value).padStart(2, "0");
 }
 
-},{"flatpickr":"llQu5","flatpickr/dist/flatpickr.min.css":"eVN6V","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","notiflix/build/notiflix-notify-aio":"eXQLZ"}],"llQu5":[function(require,module,exports) {
+},{"flatpickr":"llQu5","flatpickr/dist/flatpickr.min.css":"eVN6V","notiflix/build/notiflix-notify-aio":"eXQLZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"llQu5":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _options = require("./types/options");
