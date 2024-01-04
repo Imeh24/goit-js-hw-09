@@ -513,13 +513,11 @@ let currentColor = "";
 startButton.addEventListener("click", ()=>{
     startButton.disabled = true;
     interval = setInterval(()=>{
-        currentColor = getRandomHexColor();
         document.body.style.backgroundColor = getRandomHexColor();
     }, 1000);
 });
 stopButton.addEventListener("click", ()=>{
     clearInterval(interval);
-    document.body.style.backgroundColor = currentColor;
     startButton.disabled = false;
 });
 
